@@ -14,10 +14,10 @@ import java.util.Map;
 @RefreshScope
 public class ConfigController {
 
-    @Value("${user.name}")
+    @Value("${user.name:}")
     private String userName;
 
-    @Value("${user.age}")
+    @Value("${user.age:}")
     private Integer userAge;
 
     @GetMapping("/get")
